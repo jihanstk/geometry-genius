@@ -99,6 +99,43 @@ document.getElementById("sixth-btn").addEventListener("click",function(){
 
 
 
+const card = document.getElementById("card-1",);
+card.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
+
+const setBackgroundColor = () => {
+  card.style.color="black"
+  card.style.backgroundColor = cardColor;
+  card.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+})
+const secondCard = document.getElementById("card-2",);
+secondCard.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
+
+const setBackgroundColor = () => {
+    secondCard.style.color="black"
+    secondCard.style.backgroundColor = cardColor;
+    secondCard.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+})
+
+
+
 
 
 
