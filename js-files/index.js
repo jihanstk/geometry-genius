@@ -62,6 +62,22 @@ document.getElementById("fourth-btn").addEventListener("click",function(){
     }
     
 });
+document.getElementById("fifth-btn").addEventListener("click",function(){
+    const pentagon = document.getElementById("pentagon").innerText;
+    const p = getInnrTextById("pentagon-p");
+    const b = getInnrTextById("pentagon-b");
+    
+    
+
+    if(!isNaN(p) && !isNaN(b)){
+        const calculation = 0.5 * p * b;
+        setValueInAreaCalcultion(pentagon,calculation.toFixed(2));
+    }else{
+        alert("enter proper number");
+
+    }
+    
+});
 
 
 
