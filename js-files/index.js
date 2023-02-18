@@ -33,12 +33,29 @@ document.getElementById("third-btn").addEventListener("click",function(){
     const parallelogram = document.getElementById("parallelogram").innerText;
     const base = getInnrTextById("base-Parallelogram");
     const height = getInnrTextById("height-Parallelogram");
-    console.log(parallelogram);
+ 
     
 
     if(!isNaN(base) && !isNaN(height)){
         const calculation =  base * height;
         setValueInAreaCalcultion(parallelogram,calculation.toFixed(2));
+    }else{
+        alert("enter proper number");
+
+    }
+    
+});
+
+document.getElementById("fourth-btn").addEventListener("click",function(){
+    const rhombus = document.getElementById("rhombus").innerText;
+    const d1 = getInnrTextById("rhombus-d1");
+    const d2 = getInnrTextById("rhombus-d2");
+    
+    
+
+    if(!isNaN(d1) && !isNaN(d2)){
+        const calculation = 0.5 * d1 * d2;
+        setValueInAreaCalcultion(rhombus,calculation.toFixed(2));
     }else{
         alert("enter proper number");
 
