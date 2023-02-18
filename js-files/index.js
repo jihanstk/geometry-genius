@@ -106,7 +106,7 @@ card.addEventListener("mouseenter",function(){
     const z = Math.floor(Math.random() * 256);
     let cardColor = "rgb(" + x + "," + y + "," + z + ")";
 
-const setBackgroundColor = () => {
+function setBackgroundColor  () {
   card.style.color="black"
   card.style.backgroundColor = cardColor;
   card.style.color = randomColor;
@@ -123,8 +123,8 @@ secondCard.addEventListener("mouseenter",function(){
     const z = Math.floor(Math.random() * 256);
     let cardColor = "rgb(" + x + "," + y + "," + z + ")";
 
-const setBackgroundColor = () => {
-    secondCard.style.color="black"
+function setBackgroundColor  () {
+    // secondCard.style.color="black"
     secondCard.style.backgroundColor = cardColor;
     secondCard.style.color = randomColor;
 };
@@ -132,8 +132,80 @@ const setBackgroundColor = () => {
 setBackgroundColor();
   
   
-})
+});
+const thirdCard = document.getElementById("card-3",);
+thirdCard.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
 
+function setBackgroundColor  () {
+    // thirdCard.style.color="black"
+    thirdCard.style.backgroundColor = cardColor;
+    thirdCard.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+});
+const fourthCard = document.getElementById("card-4",);
+fourthCard.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
+
+function setBackgroundColor  () {
+    // fourthCard.style.color="black"
+    fourthCard.style.backgroundColor = cardColor;
+    fourthCard.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+});
+
+const fifthCard = document.getElementById("card-5",);
+fifthCard.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
+
+function setBackgroundColor  () {
+    // fifthCard.style.color="black"
+    fifthCard.style.backgroundColor = cardColor;
+    fifthCard.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+});
+const sixthCard = document.getElementById("card-6",);
+sixthCard.addEventListener("mouseenter",function(){
+    const x = Math.floor(Math.random() * 256);
+    const y = Math.floor(Math.random() * 256);
+    const z = Math.floor(Math.random() * 256);
+    let cardColor = "rgb(" + x + "," + y + "," + z + ")";
+
+function setBackgroundColor  () {
+    // sixthCard.style.color="black"
+    sixthCard.style.backgroundColor = cardColor;
+    sixthCard.style.color = randomColor;
+};
+
+setBackgroundColor();
+  
+  
+});
+
+document.getElementById("btn-Transfer").addEventListener("click",function(){
+    document.location = "blog.html";
+})
 
 
 
