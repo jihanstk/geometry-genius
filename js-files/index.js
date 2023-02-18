@@ -29,6 +29,24 @@ document.getElementById("second-bnt").addEventListener("click",function(){
     
 });
 
+document.getElementById("third-btn").addEventListener("click",function(){
+    const parallelogram = document.getElementById("parallelogram").innerText;
+    const base = getInnrTextById("base-Parallelogram");
+    const height = getInnrTextById("height-Parallelogram");
+    console.log(parallelogram);
+    
+
+    if(!isNaN(base) && !isNaN(height)){
+        const calculation =  base * height;
+        setValueInAreaCalcultion(parallelogram,calculation.toFixed(2));
+    }else{
+        alert("enter proper number");
+
+    }
+    
+});
+
+
 
 
 
