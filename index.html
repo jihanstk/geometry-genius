@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -29,18 +29,18 @@
       </div>
     </div>
   </header>
-  <main class="mt-8">
+  <main id="main-color" class="mt-8">
     <section class="md:flex">
       <div class="grid md:grid-cols-3 gap-4 px-4 md:w-9/12">
         <!-- card part -->
 
 
 
-        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
+        <div id="card-1" class="card text-black h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/triangle.png" alt="" class="rounded-xl" />
           </figure>
-          <div class="card-body items-center text-center">
+          <div class="card-body text-slate-500 items-center text-center">
             <h2 id="Triangle" class="card-title">Triangle</h2>
             <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
             <div class="flex"><input type="number" name="" id="triangle-base" placeholder="b" class="pl-2 w-6/12 bg-slate-300">cm.
@@ -53,7 +53,7 @@
         </div>
 
 
-        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
+        <div id="card-2" class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/rectangle.png" alt="" class="rounded-xl" />
           </figure>
@@ -129,13 +129,13 @@
             <img src="images/ellipse.png" alt="" class="rounded-xl h-full" />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title">Ellipse</h2>
+            <h2 id="Ellipse" class="card-title">Ellipse</h2>
             <p>Area (A) = &pi; ab</p>
             <div class="flex">
-              <h1>a = <span> 10 </span>cm</h1>, <h1>b = <span> 4 </span>cm</h1>
+              <h1>a = <span id="Ellipse-a"> 10 </span>cm</h1>, <h1>b = <span id="Ellipse-b"> 4 </span>cm</h1>
             </div>
             <div class="card-actions">
-              <button class="btn btn-info text-white">Calculate</button>
+              <button id="sixth-btn" class="btn btn-info text-white">Calculate</button>
             </div>
           </div>
         </div>

@@ -27,7 +27,14 @@ function setValueInAreaCalcultion(CalculationName,calculation){
 }
 
 
-
+// function random_bg_color() {
+//     const x = Math.floor(Math.random() * 256);
+//     const y = Math.floor(Math.random() * 256);
+//     const z = Math.floor(Math.random() * 256);
+//     const cardColor = "rgb(" + x + "," + y + "," + z + ")";
+  
+//    document.getElementsById("card1").style.backgroundColor = cardColor;
+//     }
 
 
 

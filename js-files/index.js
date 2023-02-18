@@ -4,7 +4,7 @@ document.getElementById("first-btn").addEventListener("click",function(){
     const base = getValueFromId("triangle-base");
     const height = getValueFromId("triangle-height");
 
-    if(!isNaN(base) && !isNaN(height)){
+    if(!isNaN(base) && !isNaN(height) && base>0 && height>0){
         const calculation = 0.5 * base * height;
         setValueInAreaCalcultion(tringle,calculation.toFixed(2));
     }else{
@@ -19,7 +19,7 @@ document.getElementById("second-bnt").addEventListener("click",function(){
     const width = getValueFromId("rectangle-width");
     const lenght = getValueFromId("rectangle-length");
 
-    if(!isNaN(width) && !isNaN(lenght)){
+    if(!isNaN(width) && !isNaN(lenght)&& width>0 && lenght>0){
         const calculation =  width * lenght;
         setValueInAreaCalcultion(rectangle,calculation.toFixed(2));
     }else{
@@ -36,7 +36,7 @@ document.getElementById("third-btn").addEventListener("click",function(){
  
     
 
-    if(!isNaN(base) && !isNaN(height)){
+    if(!isNaN(base) && !isNaN(height) && base >0 && height > 0){
         const calculation =  base * height;
         setValueInAreaCalcultion(parallelogram,calculation.toFixed(2));
     }else{
@@ -53,7 +53,7 @@ document.getElementById("fourth-btn").addEventListener("click",function(){
     
     
 
-    if(!isNaN(d1) && !isNaN(d2)){
+    if(!isNaN(d1) && !isNaN(d2) && d1>0  && d2>0){
         const calculation = 0.5 * d1 * d2;
         setValueInAreaCalcultion(rhombus,calculation.toFixed(2));
     }else{
@@ -69,7 +69,7 @@ document.getElementById("fifth-btn").addEventListener("click",function(){
     
     
 
-    if(!isNaN(p) && !isNaN(b)){
+    if(!isNaN(p) && !isNaN(b) && p>0 && b>0){
         const calculation = 0.5 * p * b;
         setValueInAreaCalcultion(pentagon,calculation.toFixed(2));
     }else{
@@ -78,6 +78,24 @@ document.getElementById("fifth-btn").addEventListener("click",function(){
     }
     
 });
+document.getElementById("sixth-btn").addEventListener("click",function(){
+    const Ellipse = document.getElementById("Ellipse").innerText;
+    const a = getInnrTextById("Ellipse-a");
+    const b = getInnrTextById("Ellipse-b");
+    
+    
+
+    if(!isNaN(a) && !isNaN(b) && a>0 && b>0){
+        const calculation = 3.14 * a * b;
+        setValueInAreaCalcultion(Ellipse,calculation.toFixed(2));
+    }else{
+        alert("enter proper number");
+
+    }
+    
+});
+
+
 
 
 
