@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geometry-Genius</title>
+  <!-- font-awesome -->
+  <script src="https://kit.fontawesome.com/479f6b8171.js" crossorigin="anonymous"></script>
+  <!-- tailwind daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Nav part -->
+    <div class="navbar w-full mt-5 px-4 bg-sky-200">
+      <div class="navbar-start">
+        <a class=" text-slate-500 normal-case text-xl"> <span
+            class="text-3xl text-slate-900 font-semibold">Interactive</span> <br>
+          Geometry Genius</a>
+      </div>
+      <div class="navbar-end">
+        <a id="btn-Transfer" class="btn btn-info">Blog</a>
+      </div>
+    </div>
+  </header>
+  <main class="mt-8">
+    <section class="md:flex">
+      <div class="grid md:grid-cols-3 gap-4 px-4 md:w-9/12">
+        <!-- card part -->
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/triangle.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 id="Triangle" class="card-title">Triangle</h2>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i> h</p>
+            <div class="flex"><input type="number" name="" id="triangle-base" placeholder="b" class="pl-2 w-6/12 bg-slate-300">cm.
+              <input type="number" name="" id="triangle-height" placeholder="h" class="pl-2 w-6/12 bg-slate-300">cm.
+            </div>
+            <div class="card-actions">
+              <button id="first-btn" class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/rectangle.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 id="rectangle" class="card-title">Rectangle</h2>
+            <p>Area (A) = w <i class="fa-solid fa-xmark"></i> l</p>
+            <div class="flex"><input type="number" name="" id="rectangle-width" placeholder="w" class="pl-2 w-6/12 bg-slate-300">cm.
+              <input type="number" name="" id="rectangle-length" placeholder="l" class="pl-2 w-6/12 bg-slate-300">cm.
+            </div>
+            <div class="card-actions">
+              <button id="second-bnt" class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/parallelogram.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Parallelogram</h2>
+            <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
+            <div class="flex">
+              <h1>b = <span> 10 </span>cm</h1>, <h1>h = <span> 12 </span>cm</h1>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/rhombus.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Rhombus</h2>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i>
+              d<sub>2</sub></p>
+            <div class="flex">
+              <h1>d<sub>1</sub> = <span> 16 </span>cm</h1>, <h1>d<sub>2</sub> = <span> 8 </span>cm</h1>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/pentagon.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Pentagon</h2>
+            <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i> b</p>
+            <div class="flex">
+              <h1>p = <span> 6 </span>cm</h1>, <h1>b = <span> 10 </span>cm</h1>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+        <div class="card w-full bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="images/ellipse.png" alt="" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">Ellipse</h2>
+            <p>Area (A) = &pi; ab</p>
+            <div class="flex">
+              <h1>a = <span> 10 </span>cm</h1>, <h1>b = <span> 4 </span>cm</h1>
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-info text-white">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card w-96 bg-base-100 shadow-xl text-black mt-5">
+        <div class="card-body">
+          <h2 class="text-3xl text-center underline decoration-double text-slate-500">Area Calculation</h2>
+          <table class="table w-full">
+            <tbody id="table-container">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  <script src="js-files/index.js"></script>
+  <script src="js-files/common.js"></script>
+</body>
+
+</html>
