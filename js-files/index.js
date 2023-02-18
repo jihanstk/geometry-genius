@@ -6,7 +6,22 @@ document.getElementById("first-btn").addEventListener("click",function(){
 
     if(!isNaN(base) && !isNaN(height)){
         const calculation = 0.5 * base * height;
-        setValueInAreaCalcultion(tringle,calculation);
+        setValueInAreaCalcultion(tringle,calculation.toFixed(2));
+    }else{
+        alert("enter proper number");
+
+    }
+    
+});
+
+document.getElementById("second-bnt").addEventListener("click",function(){
+    const rectangle = document.getElementById("rectangle").innerText;
+    const width = getValueFromId("rectangle-width");
+    const lenght = getValueFromId("rectangle-length");
+
+    if(!isNaN(width) && !isNaN(lenght)){
+        const calculation =  width * lenght;
+        setValueInAreaCalcultion(rectangle,calculation.toFixed(2));
     }else{
         alert("enter proper number");
 
