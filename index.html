@@ -11,12 +11,14 @@
   <!-- tailwind daisy ui -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <header>
+  <header class="px-9">
     <!-- Nav part -->
-    <div class="navbar w-full mt-5 px-4 bg-sky-200">
+    <div class="navbar w-full mt-5 px-4 bg-sky-200 rounded">
       <div class="navbar-start">
         <a class=" text-slate-500 normal-case text-xl"> <span
             class="text-3xl text-slate-900 font-semibold">Interactive</span> <br>
@@ -31,7 +33,10 @@
     <section class="md:flex">
       <div class="grid md:grid-cols-3 gap-4 px-4 md:w-9/12">
         <!-- card part -->
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/triangle.png" alt="" class="rounded-xl" />
           </figure>
@@ -46,7 +51,9 @@
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/rectangle.png" alt="" class="rounded-xl" />
           </figure>
@@ -61,7 +68,10 @@
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/parallelogram.png" alt="" class="rounded-xl" />
           </figure>
@@ -72,11 +82,14 @@
               <h1>b = <span> 10 </span>cm</h1>, <h1>h = <span> 12 </span>cm</h1>
             </div>
             <div class="card-actions">
-              <button class="btn btn-info text-white">Calculate</button>
+              <button id="third-btn" class="btn btn-info text-white">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/rhombus.png" alt="" class="rounded-xl" />
           </figure>
@@ -85,14 +98,16 @@
             <p>Area (A) = 0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i>
               d<sub>2</sub></p>
             <div class="flex">
-              <h1>d<sub>1</sub> = <span> 16 </span>cm</h1>, <h1>d<sub>2</sub> = <span> 8 </span>cm</h1>
+              <h1>d<sub>1</sub> = <span id="rhombus-d1"> 16 </span>cm</h1>, <h1>d<sub>2</sub> = <span id="rhombus-d2"> 8 </span>cm</h1>
             </div>
             <div class="card-actions">
               <button class="btn btn-info text-white">Calculate</button>
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
             <img src="images/pentagon.png" alt="" class="rounded-xl" />
           </figure>
@@ -107,9 +122,11 @@
             </div>
           </div>
         </div>
-        <div class="card w-full bg-base-100 shadow-xl">
+
+
+        <div class="card h-5/6 w-full bg-base-100 shadow-xl">
           <figure class="px-10 pt-10">
-            <img src="images/ellipse.png" alt="" class="rounded-xl" />
+            <img src="images/ellipse.png" alt="" class="rounded-xl h-full" />
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="card-title">Ellipse</h2>
@@ -123,9 +140,11 @@
           </div>
         </div>
       </div>
-      <div class="card w-96 bg-base-100 shadow-xl text-black mt-5">
-        <div class="card-body">
-          <h2 class="text-3xl text-center underline decoration-double text-slate-500">Area Calculation</h2>
+
+
+      <div class="card  w-96 bg-base-100 shadow-xl text-black mt-5">
+        <div class="card-body text-slate-500">
+          <h2 class="text-3xl text-center underline decoration-double">Area Calculation</h2>
           <table class="table w-full">
             <tbody id="table-container">
             </tbody>
@@ -135,8 +154,8 @@
       </div>
     </section>
   </main>
-  <script src="js-files/index.js"></script>
   <script src="js-files/common.js"></script>
+  <script src="js-files/index.js"></script>
 </body>
 
 </html>
